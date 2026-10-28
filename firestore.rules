@@ -1,0 +1,262 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Default deny all unknown collections and root documents
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Helper functions
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isVerifiedEmail() {
+      return isSignedIn() && request.auth.token.email_verified == true;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && (
+        (request.auth.token.email == 'ajitvlogmahtobrand@gmail.com' && isVerifiedEmail()) ||
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid))
+      );
+    }
+
+    // Admin whitelist collection
+    match /admins/{adminId} {
+      allow get: if isValidId(adminId) && isSignedIn() && (request.auth.uid == adminId || isAdmin());
+      allow list, write: if false;
+    }
+
+    // 1. Movies & OTT Content Collection
+    function isValidMovie(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.title is string && data.title.size() > 0 && data.title.size() <= 200 &&
+             data.language is string && data.language.size() <= 50 &&
+             data.durationMinutes is number && data.durationMinutes > 0 && data.durationMinutes <= 600 &&
+             data.releaseDate is string && data.releaseDate.size() <= 20 &&
+             data.certification is string && data.certification in ['U', 'UA', 'UA 13+', 'UA 16+', 'A'] &&
+             data.posterUrl is string && data.posterUrl.size() <= 1000 &&
+             data.status is string && data.status in ['NOW_SHOWING', 'COMING_SOON', 'DRAFT', 'ARCHIVED'];
+    }
+
+    match /movies/{movieId} {
+      allow get: if isValidId(movieId);
+      allow list: if true;
+      allow create: if isValidId(movieId) && isAdmin() && isValidMovie(incoming());
+      allow update: if isValidId(movieId) && isAdmin() && isValidMovie(incoming());
+      allow delete: if isValidId(movieId) && isAdmin();
+    }
+
+    // 2. Rental Entitlements Collection (Customer Privacy & Admin Access)
+    function isValidRental(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.userId is string && data.userId.size() <= 128 &&
+             data.contentId is string && data.contentId.size() <= 128 &&
+             data.contentTitle is string && data.contentTitle.size() <= 200 &&
+             data.durationHours is number && data.durationHours > 0 &&
+             data.purchasedAt is string && data.purchasedAt.size() <= 50 &&
+             data.expiresAt is string && data.expiresAt.size() <= 50 &&
+             data.status is string && data.status in ['ACTIVE', 'EXPIRED', 'REVOKED'];
+    }
+
+    match /rentals/{rentalId} {
+      allow get: if isValidId(rentalId) && (isAdmin() || (isSignedIn() && resource.data.userId == request.auth.uid));
+      allow list: if isAdmin() || (isSignedIn() && resource.data.userId == request.auth.uid);
+      allow create, update: if isValidId(rentalId) && isAdmin() && isValidRental(incoming());
+      allow delete: if isValidId(rentalId) && isAdmin();
+    }
+
+    // 3. Purchase Entitlements Collection (Permanent Ownership & Admin Access)
+    function isValidPurchase(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.userId is string && data.userId.size() <= 128 &&
+             data.contentId is string && data.contentId.size() <= 128 &&
+             data.contentTitle is string && data.contentTitle.size() <= 200 &&
+             data.purchasedAt is string && data.purchasedAt.size() <= 50 &&
+             data.status is string && data.status in ['ACTIVE', 'REVOKED'];
+    }
+
+    match /purchases/{purchaseId} {
+      allow get: if isValidId(purchaseId) && (isAdmin() || (isSignedIn() && resource.data.userId == request.auth.uid));
+      allow list: if isAdmin() || (isSignedIn() && resource.data.userId == request.auth.uid);
+      allow create, update: if isValidId(purchaseId) && isAdmin() && isValidPurchase(incoming());
+      allow delete: if isValidId(purchaseId) && isAdmin();
+    }
+
+    // 4. Video Orders Collection (Rental / Purchase Checkout & Verification)
+    function isValidVideoOrder(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.userId is string && data.userId.size() <= 128 &&
+             data.contentId is string && data.contentId.size() <= 128 &&
+             data.orderType is string && data.orderType in ['RENTAL', 'PURCHASE'] &&
+             data.amount is number && data.amount >= 0 &&
+             data.paymentStatus is string;
+    }
+
+    match /video_orders/{orderId} {
+      allow get: if isValidId(orderId) && (isAdmin() || (isSignedIn() && resource.data.userId == request.auth.uid));
+      allow list: if isAdmin() || (isSignedIn() && resource.data.userId == request.auth.uid);
+      allow create: if isValidId(orderId) && isValidVideoOrder(incoming()) && (
+        isAdmin() ||
+        (isSignedIn() && incoming().userId == request.auth.uid &&
+         incoming().paymentStatus in ['PENDING', 'PENDING_VERIFICATION'])
+      );
+      allow update: if isValidId(orderId) && (
+        isAdmin() ||
+        (isSignedIn() && existing().userId == request.auth.uid &&
+         incoming().diff(existing()).affectedKeys().hasOnly(['upiReference', 'paymentStatus']) &&
+         incoming().paymentStatus in ['PENDING_VERIFICATION'])
+      );
+      allow delete: if isValidId(orderId) && isAdmin();
+    }
+
+    // 5. Hero Banners Collection
+    function isValidBanner(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.title is string && data.title.size() <= 150 &&
+             data.imageUrl is string && data.imageUrl.size() <= 1000 &&
+             data.ctaText is string && data.ctaText.size() <= 50 &&
+             data.ctaLink is string && data.ctaLink.size() <= 200 &&
+             data.isActive is bool &&
+             data.displayOrder is number;
+    }
+
+    match /banners/{bannerId} {
+      allow get: if isValidId(bannerId);
+      allow list: if true;
+      allow create: if isValidId(bannerId) && isAdmin() && isValidBanner(incoming());
+      allow update: if isValidId(bannerId) && isAdmin() && isValidBanner(incoming());
+      allow delete: if isValidId(bannerId) && isAdmin();
+    }
+
+    // 6. Shows Collection
+    function isValidShow(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.movieId is string && data.movieId.size() <= 128 &&
+             data.screenId is string && data.screenId.size() <= 128 &&
+             data.date is string && data.date.size() <= 20 &&
+             data.startTime is string && data.startTime.size() <= 10 &&
+             data.endTime is string && data.endTime.size() <= 10 &&
+             data.status is string && data.status in ['SCHEDULED', 'OPEN', 'CANCELLED', 'COMPLETED'];
+    }
+
+    match /shows/{showId} {
+      allow get: if isValidId(showId);
+      allow list: if true;
+      allow create: if isValidId(showId) && isAdmin() && isValidShow(incoming());
+      allow update: if isValidId(showId) && isAdmin() && isValidShow(incoming());
+      allow delete: if isValidId(showId) && isAdmin();
+    }
+
+    // 7. Screens Collection
+    function isValidScreen(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.name is string && data.name.size() <= 100 &&
+             data.soundSystem is string && data.soundSystem.size() <= 100 &&
+             data.projection is string && data.projection.size() <= 100 &&
+             data.totalSeats is number && data.totalSeats > 0 && data.totalSeats <= 1000 &&
+             data.isActive is bool;
+    }
+
+    match /screens/{screenId} {
+      allow get: if isValidId(screenId);
+      allow list: if true;
+      allow create: if isValidId(screenId) && isAdmin() && isValidScreen(incoming());
+      allow update: if isValidId(screenId) && isAdmin() && isValidScreen(incoming());
+      allow delete: if isValidId(screenId) && isAdmin();
+    }
+
+    // 8. Settings Collection
+    match /settings/{settingId} {
+      allow get: if isValidId(settingId);
+      allow list: if true;
+      allow create, update: if isValidId(settingId) && isAdmin() &&
+                            incoming().cinemaName is string && incoming().cinemaName.size() <= 100 &&
+                            incoming().location is string && incoming().location.size() <= 100;
+      allow delete: if false; // Cinema settings must never be deleted
+    }
+
+    // 9. Announcements Collection
+    match /announcements/{announcementId} {
+      allow get: if isValidId(announcementId);
+      allow list: if true;
+      allow create, update: if isValidId(announcementId) && isAdmin() &&
+                            incoming().id is string && incoming().id.size() <= 128 &&
+                            incoming().message is string && incoming().message.size() <= 500 &&
+                            incoming().isActive is bool;
+      allow delete: if isValidId(announcementId) && isAdmin();
+    }
+
+    // 10. Coupons Collection
+    match /coupons/{couponId} {
+      allow get: if isValidId(couponId);
+      allow list: if true;
+      allow create, update: if isValidId(couponId) && isAdmin() &&
+                            incoming().code is string && incoming().code.size() <= 30 &&
+                            incoming().discountValue is number && incoming().discountValue >= 0;
+      allow delete: if isValidId(couponId) && isAdmin();
+    }
+
+    // 11. Cinema Bookings Collection (Customer Privacy & Admin Access)
+    function isValidBooking(data) {
+      return data.id is string && data.id.size() <= 128 &&
+             data.ticketToken is string && data.ticketToken.size() <= 128 &&
+             data.customerName is string && data.customerName.size() > 0 && data.customerName.size() <= 100 &&
+             data.customerPhone is string && data.customerPhone.size() <= 20 &&
+             data.showId is string && data.showId.size() <= 128 &&
+             data.movieId is string && data.movieId.size() <= 128 &&
+             data.screenId is string && data.screenId.size() <= 128 &&
+             data.totalAmount is number && data.totalAmount >= 0 &&
+             data.bookingStatus is string &&
+             data.paymentStatus is string;
+    }
+
+    match /bookings/{bookingId} {
+      // Individual customer can view their own booking; Admin can view any
+      allow get: if isValidId(bookingId) && (
+        isAdmin() ||
+        (isSignedIn() && resource.data.userId == request.auth.uid)
+      );
+
+      // Secure list query: client query must filter by userId == request.auth.uid or caller is admin
+      allow list: if isAdmin() || (isSignedIn() && resource.data.userId == request.auth.uid);
+
+      // Customer can create booking in awaiting payment state
+      allow create: if isValidId(bookingId) && isValidBooking(incoming()) && (
+        isAdmin() ||
+        (isSignedIn() && incoming().userId == request.auth.uid &&
+         incoming().bookingStatus in ['AWAITING_PAYMENT', 'PENDING_VERIFICATION'] &&
+         incoming().paymentStatus in ['UNPAID', 'PENDING', 'PENDING_VERIFICATION', 'SUBMITTED'])
+      );
+
+      // Customer can only submit UPI reference; Admin can verify payment or change status
+      allow update: if isValidId(bookingId) && (
+        isAdmin() ||
+        (
+          isSignedIn() &&
+          existing().userId == request.auth.uid &&
+          incoming().diff(existing()).affectedKeys().hasOnly(['upiReference', 'upiSubmittedAt', 'paymentStatus', 'bookingStatus', 'customerPhone', 'customerEmail']) &&
+          incoming().paymentStatus in ['PENDING_VERIFICATION', 'SUBMITTED'] &&
+          incoming().bookingStatus in ['PENDING_VERIFICATION']
+        )
+      );
+
+      // Delete reserved strictly for Admin
+      allow delete: if isValidId(bookingId) && isAdmin();
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Remix Laxmi Cineplex Hazaribagh",
+  "description": "Premium cinema ticket booking platform and cinema management system for Laxmi Cineplex, Hazaribagh, Jharkhand.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,2656 @@
+{
+  "settings": {
+    "cinemaName": "Laxmi Cineplex Hazaribagh",
+    "location": "Hazaribagh, Jharkhand, India",
+    "address": "Cinema Road, Near Jhanda Chowk, Hazaribagh, Jharkhand 825301",
+    "phone": "+91 6546 223456 / +91 9431 187654",
+    "email": "bookings@laxmicineplex.in",
+    "timezone": "Asia/Kolkata",
+    "currency": "INR",
+    "convenienceFeePerTicket": 25,
+    "gstPercentage": 18,
+    "cancellationCutoffHours": 2,
+    "maxTicketsPerBooking": 10,
+    "seatHoldMinutes": 8,
+    "isMaintenanceMode": false,
+    "announcementTickerActive": true,
+    "upiConfig": {
+      "enabled": true,
+      "payeeName": "Rajan Bhogta",
+      "bankName": "India Post Payment Bank 3764",
+      "upiId": "rajanbhogta714@okhdfcbank",
+      "qrImagePath": "/images/rajan_bhogta_upi_qr.jpeg",
+      "instructions": "Scan using Google Pay, PhonePe, Paytm, BHIM, or any UPI app. After transfer, submit the 12-digit UTR/Reference No. for Box Office turnstile ticket issuance.",
+      "allowManualVerification": true
+    }
+  },
+  "movies": [
+    {
+      "title": "Hazaribagh Express 4K",
+      "synopsis": "A high-octane thriller set in the coal hills of Jharkhand.",
+      "language": "Hindi",
+      "genre": [
+        "Action",
+        "Thriller"
+      ],
+      "durationMinutes": 135,
+      "releaseDate": "2026-11-01",
+      "certification": "UA",
+      "posterUrl": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800",
+      "backdropUrl": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1600",
+      "trailerUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "status": "COMING_SOON",
+      "director": "Rajan Bhogta",
+      "cast": [
+        "Amit Kumar",
+        "Pooja Verma"
+      ],
+      "isFeatured": true,
+      "id": "mov-mvrsof0x-uw2s",
+      "createdAt": "2026-10-28T07:30:17.745Z",
+      "updatedAt": "2026-10-28T07:30:17.746Z"
+    },
+    {
+      "id": "mov-pushpa-2",
+      "title": "Pushpa 2: The Rule",
+      "synopsis": "Pushpa Raj expands his red sandalwood empire while facing escalating hostilities from SP Bhanwar Singh Shekhawat and rival syndicates in an epic showdown of power and defiance.",
+      "language": "Hindi",
+      "genre": [
+        "Action",
+        "Thriller",
+        "Drama"
+      ],
+      "durationMinutes": 195,
+      "releaseDate": "2024-12-05",
+      "certification": "UA 16+",
+      "posterUrl": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=800&q=80",
+      "backdropUrl": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=80",
+      "trailerUrl": "https://www.youtube.com/watch?v=1kVK0KE48Io",
+      "status": "NOW_SHOWING",
+      "director": "Sukumar",
+      "cast": [
+        "Allu Arjun",
+        "Rashmika Mandanna",
+        "Fahadh Faasil"
+      ],
+      "isFeatured": true,
+      "isTrending": true,
+      "createdAt": "2026-10-28T07:30:17.743Z",
+      "updatedAt": "2026-10-28T07:30:17.743Z"
+    },
+    {
+      "id": "mov-stree-2",
+      "title": "Stree 2: Sarkate Ka Aatank",
+      "synopsis": "The town of Chanderi is haunted once again, this time by a headless entity named Sarkata. Vicky and his loyal gang must team up with the mysterious woman to rescue the women of the village.",
+      "language": "Hindi",
+      "genre": [
+        "Horror",
+        "Comedy",
+        "Mystery"
+      ],
+      "durationMinutes": 147,
+      "releaseDate": "2024-08-15",
+      "certification": "UA",
+      "posterUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80",
+      "backdropUrl": "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=1600&q=80",
+      "trailerUrl": "https://www.youtube.com/watch?v=KVnheftv5rk",
+      "status": "NOW_SHOWING",
+      "director": "Amar Kaushik",
+      "cast": [
+        "Shraddha Kapoor",
+        "Rajkummar Rao",
+        "Pankaj Tripathi",
+        "Aparshakti Khurana"
+      ],
+      "isFeatured": true,
+      "isTrending": true,
+      "createdAt": "2026-10-28T07:30:17.743Z",
+      "updatedAt": "2026-10-28T07:30:17.743Z"
+    },
+    {
+      "id": "mov-singham-again",
+      "title": "Singham Again",
+      "synopsis": "DCP Bajirao Singham embarks on a dangerous cross-border hostage rescue mission inspired by the epic Ramayana, uniting with ATS Chief Sooryavanshi, Simmba, and ACP Satya.",
+      "language": "Hindi",
+      "genre": [
+        "Action",
+        "Thriller",
+        "Crime"
+      ],
+      "durationMinutes": 168,
+      "releaseDate": "2024-11-01",
+      "certification": "UA 16+",
+      "posterUrl": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=800&q=80",
+      "backdropUrl": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=1600&q=80",
+      "trailerUrl": "https://www.youtube.com/watch?v=2T9tXnC2eQ0",
+      "status": "NOW_SHOWING",
+      "director": "Rohit Shetty",
+      "cast": [
+        "Ajay Devgn",
+        "Kareena Kapoor",
+        "Akshay Kumar",
+        "Ranveer Singh",
+        "Deepika Padukone"
+      ],
+      "isFeatured": false,
+      "isTrending": true,
+      "createdAt": "2026-10-28T07:30:17.743Z",
+      "updatedAt": "2026-10-28T07:30:17.743Z"
+    },
+    {
+      "id": "mov-ganga-teere",
+      "title": "Ganga Ke Teere: Maati Ki Khushboo",
+      "synopsis": "A heartfelt rural drama filmed in Jharkhand and Bihar detailing a youth returning from the city to revitalize ancestral farmland and protect his community against encroaching industrial miners.",
+      "language": "Bhojpuri",
+      "genre": [
+        "Drama",
+        "Family",
+        "Musical"
+      ],
+      "durationMinutes": 135,
+      "releaseDate": "2024-10-18",
+      "certification": "U",
+      "posterUrl": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80",
+      "backdropUrl": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80",
+      "trailerUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "status": "NOW_SHOWING",
+      "director": "Rameshwar Ojha",
+      "cast": [
+        "Khesari Lal",
+        "Amrapali Dubey",
+        "Sanjay Pandey"
+      ],
+      "isFeatured": false,
+      "isTrending": false,
+      "isRegional": true,
+      "createdAt": "2026-10-28T07:30:17.743Z",
+      "updatedAt": "2026-10-28T07:30:17.743Z"
+    },
+    {
+      "id": "mov-devara",
+      "title": "Devara: Part 1",
+      "synopsis": "In a coastal territory ruled by rogue smugglers, fearless chieftain Devara sacrifices everything to restore honor and protect his people from treacherous betrayals.",
+      "language": "Hindi",
+      "genre": [
+        "Action",
+        "Drama"
+      ],
+      "durationMinutes": 178,
+      "releaseDate": "2024-09-27",
+      "certification": "UA 16+",
+      "posterUrl": "https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=800&q=80",
+      "backdropUrl": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80",
+      "trailerUrl": "https://www.youtube.com/watch?v=4rgUVQ8B-9c",
+      "status": "NOW_SHOWING",
+      "director": "Koratala Siva",
+      "cast": [
+        "Jr NTR",
+        "Janhvi Kapoor",
+        "Saif Ali Khan"
+      ],
+      "isFeatured": false,
+      "isTrending": true,
+      "createdAt": "2026-10-28T07:30:17.743Z",
+      "updatedAt": "2026-10-28T07:30:17.743Z"
+    },
+    {
+      "id": "mov-war-2",
+      "title": "War 2 (YRF Spy Universe)",
+      "synopsis": "RAW agent Major Kabir Dhaliwal confronts a lethal rogue operative in an international chase that spans five continents and threatens global security.",
+      "language": "Hindi",
+      "genre": [
+        "Action",
+        "Thriller",
+        "Spy"
+      ],
+      "durationMinutes": 160,
+      "releaseDate": "2025-08-14",
+      "certification": "UA",
+      "posterUrl": "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80",
+      "backdropUrl": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1600&q=80",
+      "trailerUrl": "https://www.youtube.com/watch?v=tQ0mzXRk-oM",
+      "status": "COMING_SOON",
+      "director": "Ayan Mukerji",
+      "cast": [
+        "Hrithik Roshan",
+        "Jr NTR",
+        "Kiara Advani"
+      ],
+      "isFeatured": true,
+      "isTrending": false,
+      "createdAt": "2026-10-28T07:30:17.743Z",
+      "updatedAt": "2026-10-28T07:30:17.743Z"
+    },
+    {
+      "id": "mov-spirit",
+      "title": "Spirit: Sandeep Reddy Vanga Project",
+      "synopsis": "An intense, uncompromising crime noir chronicle focusing on an honest, explosive cop fighting systemic rot and deep-rooted underworld cartels.",
+      "language": "Hindi",
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "durationMinutes": 180,
+      "releaseDate": "2025-11-20",
+      "certification": "A",
+      "posterUrl": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=800&q=80",
+      "backdropUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1600&q=80",
+      "trailerUrl": "https://www.youtube.com/watch?v=kJQP7kiw5Fk",
+      "status": "COMING_SOON",
+      "director": "Sandeep Reddy Vanga",
+      "cast": [
+        "Prabhas",
+        "Trisha Krishnan"
+      ],
+      "isFeatured": false,
+      "isTrending": false,
+      "createdAt": "2026-10-28T07:30:17.743Z",
+      "updatedAt": "2026-10-28T07:30:17.743Z"
+    }
+  ],
+  "screens": [
+    {
+      "id": "screen-1",
+      "name": "Screen 1 - Dolby Atmos 7.1",
+      "soundSystem": "Dolby Atmos 7.1 Immersive Surround",
+      "projection": "Barco 4K Laser High Dynamic Range",
+      "totalSeats": 120,
+      "isActive": true,
+      "rows": [
+        {
+          "rowLabel": "A",
+          "category": "RECLINER",
+          "price": 350,
+          "seats": [
+            {
+              "seatNumber": 1,
+              "label": "A1",
+              "isAisle": false,
+              "isAccessible": true
+            },
+            {
+              "seatNumber": 2,
+              "label": "A2",
+              "isAisle": false,
+              "isAccessible": false
+            },
+            {
+              "seatNumber": 3,
+              "label": "A3",
+              "isAisle": false,
+              "isAccessible": false
+            },
+            {
+              "seatNumber": 4,
+              "label": "A4",
+              "isAisle": true,
+              "isAccessible": false
+            },
+            {
+              "seatNumber": 5,
+              "label": "A5",
+              "isAisle": false,
+              "isAccessible": false
+            },
+            {
+              "seatNumber": 6,
+              "label": "A6",
+              "isAisle": false,
+              "isAccessible": false
+            },
+            {
+              "seatNumber": 7,
+              "label": "A7",
+              "isAisle": false,
+              "isAccessible": false
+            },
+            {
+              "seatNumber": 8,
+              "label": "A8",
+              "isAisle": false,
+              "isAccessible": false
+            },
+            {
+              "seatNumber": 9,
+              "label": "A9",
+              "isAisle": true,
+              "isAccessible": false
+            },
+            {
+              "seatNumber": 10,
+              "label": "A10",
+              "isAisle": false,
+              "isAccessible": false
+            },
+            {
+              "seatNumber": 11,
+              "label": "A11",
+              "isAisle": false,
+              "isAccessible": false
+            },
+            {
+              "seatNumber": 12,
+              "label": "A12",
+              "isAisle": false,
+              "isAccessible": true
+            }
+          ]
+        },
+        {
+          "rowLabel": "B",
+          "category": "RECLINER",
+          "price": 350,
+          "seats": [
+            {
+              "seatNumber": 1,
+              "label": "B1",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 2,
+              "label": "B2",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 3,
+              "label": "B3",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 4,
+              "label": "B4",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 5,
+              "label": "B5",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 6,
+              "label": "B6",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 7,
+              "label": "B7",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 8,
+              "label": "B8",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 9,
+              "label": "B9",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 10,
+              "label": "B10",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 11,
+              "label": "B11",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 12,
+              "label": "B12",
+              "isAisle": false
+            }
+          ]
+        },
+        {
+          "rowLabel": "C",
+          "category": "PRIME",
+          "price": 240,
+          "seats": [
+            {
+              "seatNumber": 1,
+              "label": "C1",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 2,
+              "label": "C2",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 3,
+              "label": "C3",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 4,
+              "label": "C4",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 5,
+              "label": "C5",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 6,
+              "label": "C6",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 7,
+              "label": "C7",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 8,
+              "label": "C8",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 9,
+              "label": "C9",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 10,
+              "label": "C10",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 11,
+              "label": "C11",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 12,
+              "label": "C12",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 13,
+              "label": "C13",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 14,
+              "label": "C14",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 15,
+              "label": "C15",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 16,
+              "label": "C16",
+              "isAisle": false
+            }
+          ]
+        },
+        {
+          "rowLabel": "D",
+          "category": "PRIME",
+          "price": 240,
+          "seats": [
+            {
+              "seatNumber": 1,
+              "label": "D1",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 2,
+              "label": "D2",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 3,
+              "label": "D3",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 4,
+              "label": "D4",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 5,
+              "label": "D5",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 6,
+              "label": "D6",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 7,
+              "label": "D7",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 8,
+              "label": "D8",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 9,
+              "label": "D9",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 10,
+              "label": "D10",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 11,
+              "label": "D11",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 12,
+              "label": "D12",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 13,
+              "label": "D13",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 14,
+              "label": "D14",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 15,
+              "label": "D15",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 16,
+              "label": "D16",
+              "isAisle": false
+            }
+          ]
+        },
+        {
+          "rowLabel": "E",
+          "category": "PRIME",
+          "price": 240,
+          "seats": [
+            {
+              "seatNumber": 1,
+              "label": "E1",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 2,
+              "label": "E2",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 3,
+              "label": "E3",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 4,
+              "label": "E4",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 5,
+              "label": "E5",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 6,
+              "label": "E6",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 7,
+              "label": "E7",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 8,
+              "label": "E8",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 9,
+              "label": "E9",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 10,
+              "label": "E10",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 11,
+              "label": "E11",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 12,
+              "label": "E12",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 13,
+              "label": "E13",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 14,
+              "label": "E14",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 15,
+              "label": "E15",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 16,
+              "label": "E16",
+              "isAisle": false
+            }
+          ]
+        },
+        {
+          "rowLabel": "F",
+          "category": "CLASSIC",
+          "price": 180,
+          "seats": [
+            {
+              "seatNumber": 1,
+              "label": "F1",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 2,
+              "label": "F2",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 3,
+              "label": "F3",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 4,
+              "label": "F4",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 5,
+              "label": "F5",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 6,
+              "label": "F6",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 7,
+              "label": "F7",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 8,
+              "label": "F8",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 9,
+              "label": "F9",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 10,
+              "label": "F10",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 11,
+              "label": "F11",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 12,
+              "label": "F12",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 13,
+              "label": "F13",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 14,
+              "label": "F14",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 15,
+              "label": "F15",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 16,
+              "label": "F16",
+              "isAisle": false
+            }
+          ]
+        },
+        {
+          "rowLabel": "G",
+          "category": "CLASSIC",
+          "price": 180,
+          "seats": [
+            {
+              "seatNumber": 1,
+              "label": "G1",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 2,
+              "label": "G2",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 3,
+              "label": "G3",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 4,
+              "label": "G4",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 5,
+              "label": "G5",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 6,
+              "label": "G6",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 7,
+              "label": "G7",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 8,
+              "label": "G8",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 9,
+              "label": "G9",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 10,
+              "label": "G10",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 11,
+              "label": "G11",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 12,
+              "label": "G12",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 13,
+              "label": "G13",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 14,
+              "label": "G14",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 15,
+              "label": "G15",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 16,
+              "label": "G16",
+              "isAisle": false
+            }
+          ]
+        },
+        {
+          "rowLabel": "H",
+          "category": "CLASSIC",
+          "price": 180,
+          "seats": [
+            {
+              "seatNumber": 1,
+              "label": "H1",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 2,
+              "label": "H2",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 3,
+              "label": "H3",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 4,
+              "label": "H4",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 5,
+              "label": "H5",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 6,
+              "label": "H6",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 7,
+              "label": "H7",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 8,
+              "label": "H8",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 9,
+              "label": "H9",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 10,
+              "label": "H10",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 11,
+              "label": "H11",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 12,
+              "label": "H12",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 13,
+              "label": "H13",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 14,
+              "label": "H14",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 15,
+              "label": "H15",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 16,
+              "label": "H16",
+              "isAisle": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "screen-2",
+      "name": "Screen 2 - 4K Laser Projection",
+      "soundSystem": "Dolby 7.1 Digital Cinema",
+      "projection": "Christie Digital 4K Laser Cinema",
+      "totalSeats": 96,
+      "isActive": true,
+      "rows": [
+        {
+          "rowLabel": "A",
+          "category": "RECLINER",
+          "price": 320,
+          "seats": [
+            {
+              "seatNumber": 1,
+              "label": "A1",
+              "isAisle": false,
+              "isAccessible": true
+            },
+            {
+              "seatNumber": 2,
+              "label": "A2",
+              "isAisle": false,
+              "isAccessible": false
+            },
+            {
+              "seatNumber": 3,
+              "label": "A3",
+              "isAisle": true,
+              "isAccessible": false
+            },
+            {
+              "seatNumber": 4,
+              "label": "A4",
+              "isAisle": false,
+              "isAccessible": false
+            },
+            {
+              "seatNumber": 5,
+              "label": "A5",
+              "isAisle": false,
+              "isAccessible": false
+            },
+            {
+              "seatNumber": 6,
+              "label": "A6",
+              "isAisle": false,
+              "isAccessible": false
+            },
+            {
+              "seatNumber": 7,
+              "label": "A7",
+              "isAisle": false,
+              "isAccessible": false
+            },
+            {
+              "seatNumber": 8,
+              "label": "A8",
+              "isAisle": true,
+              "isAccessible": false
+            },
+            {
+              "seatNumber": 9,
+              "label": "A9",
+              "isAisle": false,
+              "isAccessible": false
+            },
+            {
+              "seatNumber": 10,
+              "label": "A10",
+              "isAisle": false,
+              "isAccessible": false
+            }
+          ]
+        },
+        {
+          "rowLabel": "B",
+          "category": "PRIME",
+          "price": 220,
+          "seats": [
+            {
+              "seatNumber": 1,
+              "label": "B1",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 2,
+              "label": "B2",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 3,
+              "label": "B3",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 4,
+              "label": "B4",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 5,
+              "label": "B5",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 6,
+              "label": "B6",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 7,
+              "label": "B7",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 8,
+              "label": "B8",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 9,
+              "label": "B9",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 10,
+              "label": "B10",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 11,
+              "label": "B11",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 12,
+              "label": "B12",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 13,
+              "label": "B13",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 14,
+              "label": "B14",
+              "isAisle": false
+            }
+          ]
+        },
+        {
+          "rowLabel": "C",
+          "category": "PRIME",
+          "price": 220,
+          "seats": [
+            {
+              "seatNumber": 1,
+              "label": "C1",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 2,
+              "label": "C2",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 3,
+              "label": "C3",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 4,
+              "label": "C4",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 5,
+              "label": "C5",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 6,
+              "label": "C6",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 7,
+              "label": "C7",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 8,
+              "label": "C8",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 9,
+              "label": "C9",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 10,
+              "label": "C10",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 11,
+              "label": "C11",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 12,
+              "label": "C12",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 13,
+              "label": "C13",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 14,
+              "label": "C14",
+              "isAisle": false
+            }
+          ]
+        },
+        {
+          "rowLabel": "D",
+          "category": "PRIME",
+          "price": 220,
+          "seats": [
+            {
+              "seatNumber": 1,
+              "label": "D1",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 2,
+              "label": "D2",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 3,
+              "label": "D3",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 4,
+              "label": "D4",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 5,
+              "label": "D5",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 6,
+              "label": "D6",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 7,
+              "label": "D7",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 8,
+              "label": "D8",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 9,
+              "label": "D9",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 10,
+              "label": "D10",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 11,
+              "label": "D11",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 12,
+              "label": "D12",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 13,
+              "label": "D13",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 14,
+              "label": "D14",
+              "isAisle": false
+            }
+          ]
+        },
+        {
+          "rowLabel": "E",
+          "category": "CLASSIC",
+          "price": 160,
+          "seats": [
+            {
+              "seatNumber": 1,
+              "label": "E1",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 2,
+              "label": "E2",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 3,
+              "label": "E3",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 4,
+              "label": "E4",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 5,
+              "label": "E5",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 6,
+              "label": "E6",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 7,
+              "label": "E7",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 8,
+              "label": "E8",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 9,
+              "label": "E9",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 10,
+              "label": "E10",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 11,
+              "label": "E11",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 12,
+              "label": "E12",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 13,
+              "label": "E13",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 14,
+              "label": "E14",
+              "isAisle": false
+            }
+          ]
+        },
+        {
+          "rowLabel": "F",
+          "category": "CLASSIC",
+          "price": 160,
+          "seats": [
+            {
+              "seatNumber": 1,
+              "label": "F1",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 2,
+              "label": "F2",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 3,
+              "label": "F3",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 4,
+              "label": "F4",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 5,
+              "label": "F5",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 6,
+              "label": "F6",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 7,
+              "label": "F7",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 8,
+              "label": "F8",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 9,
+              "label": "F9",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 10,
+              "label": "F10",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 11,
+              "label": "F11",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 12,
+              "label": "F12",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 13,
+              "label": "F13",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 14,
+              "label": "F14",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 15,
+              "label": "F15",
+              "isAisle": false
+            }
+          ]
+        },
+        {
+          "rowLabel": "G",
+          "category": "CLASSIC",
+          "price": 160,
+          "seats": [
+            {
+              "seatNumber": 1,
+              "label": "G1",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 2,
+              "label": "G2",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 3,
+              "label": "G3",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 4,
+              "label": "G4",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 5,
+              "label": "G5",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 6,
+              "label": "G6",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 7,
+              "label": "G7",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 8,
+              "label": "G8",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 9,
+              "label": "G9",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 10,
+              "label": "G10",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 11,
+              "label": "G11",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 12,
+              "label": "G12",
+              "isAisle": true
+            },
+            {
+              "seatNumber": 13,
+              "label": "G13",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 14,
+              "label": "G14",
+              "isAisle": false
+            },
+            {
+              "seatNumber": 15,
+              "label": "G15",
+              "isAisle": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "shows": [
+    {
+      "id": "show-2026-10-28-s1-1030",
+      "movieId": "mov-pushpa-2",
+      "screenId": "screen-1",
+      "date": "2026-10-28",
+      "startTime": "10:30",
+      "endTime": "14:00",
+      "pricing": {
+        "RECLINER": 350,
+        "PRIME": 240,
+        "CLASSIC": 180
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-28-s1-1445",
+      "movieId": "mov-stree-2",
+      "screenId": "screen-1",
+      "date": "2026-10-28",
+      "startTime": "14:45",
+      "endTime": "17:30",
+      "pricing": {
+        "RECLINER": 350,
+        "PRIME": 240,
+        "CLASSIC": 180
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-28-s1-1815",
+      "movieId": "mov-pushpa-2",
+      "screenId": "screen-1",
+      "date": "2026-10-28",
+      "startTime": "18:15",
+      "endTime": "21:45",
+      "pricing": {
+        "RECLINER": 380,
+        "PRIME": 260,
+        "CLASSIC": 200
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-28-s1-2215",
+      "movieId": "mov-stree-2",
+      "screenId": "screen-1",
+      "date": "2026-10-28",
+      "startTime": "22:15",
+      "endTime": "01:00",
+      "pricing": {
+        "RECLINER": 320,
+        "PRIME": 220,
+        "CLASSIC": 170
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-28-s2-1115",
+      "movieId": "mov-singham-again",
+      "screenId": "screen-2",
+      "date": "2026-10-28",
+      "startTime": "11:15",
+      "endTime": "14:15",
+      "pricing": {
+        "RECLINER": 320,
+        "PRIME": 220,
+        "CLASSIC": 160
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-28-s2-1500",
+      "movieId": "mov-ganga-teere",
+      "screenId": "screen-2",
+      "date": "2026-10-28",
+      "startTime": "15:00",
+      "endTime": "17:30",
+      "pricing": {
+        "RECLINER": 280,
+        "PRIME": 180,
+        "CLASSIC": 130
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-28-s2-1830",
+      "movieId": "mov-singham-again",
+      "screenId": "screen-2",
+      "date": "2026-10-28",
+      "startTime": "18:30",
+      "endTime": "21:30",
+      "pricing": {
+        "RECLINER": 340,
+        "PRIME": 240,
+        "CLASSIC": 180
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-28-s2-2200",
+      "movieId": "mov-devara",
+      "screenId": "screen-2",
+      "date": "2026-10-28",
+      "startTime": "22:00",
+      "endTime": "01:00",
+      "pricing": {
+        "RECLINER": 300,
+        "PRIME": 200,
+        "CLASSIC": 150
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-29-s1-1030",
+      "movieId": "mov-pushpa-2",
+      "screenId": "screen-1",
+      "date": "2026-10-29",
+      "startTime": "10:30",
+      "endTime": "14:00",
+      "pricing": {
+        "RECLINER": 350,
+        "PRIME": 240,
+        "CLASSIC": 180
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-29-s1-1445",
+      "movieId": "mov-stree-2",
+      "screenId": "screen-1",
+      "date": "2026-10-29",
+      "startTime": "14:45",
+      "endTime": "17:30",
+      "pricing": {
+        "RECLINER": 350,
+        "PRIME": 240,
+        "CLASSIC": 180
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-29-s1-1815",
+      "movieId": "mov-pushpa-2",
+      "screenId": "screen-1",
+      "date": "2026-10-29",
+      "startTime": "18:15",
+      "endTime": "21:45",
+      "pricing": {
+        "RECLINER": 380,
+        "PRIME": 260,
+        "CLASSIC": 200
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-29-s1-2215",
+      "movieId": "mov-stree-2",
+      "screenId": "screen-1",
+      "date": "2026-10-29",
+      "startTime": "22:15",
+      "endTime": "01:00",
+      "pricing": {
+        "RECLINER": 320,
+        "PRIME": 220,
+        "CLASSIC": 170
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-29-s2-1115",
+      "movieId": "mov-singham-again",
+      "screenId": "screen-2",
+      "date": "2026-10-29",
+      "startTime": "11:15",
+      "endTime": "14:15",
+      "pricing": {
+        "RECLINER": 320,
+        "PRIME": 220,
+        "CLASSIC": 160
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-29-s2-1500",
+      "movieId": "mov-ganga-teere",
+      "screenId": "screen-2",
+      "date": "2026-10-29",
+      "startTime": "15:00",
+      "endTime": "17:30",
+      "pricing": {
+        "RECLINER": 280,
+        "PRIME": 180,
+        "CLASSIC": 130
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-29-s2-1830",
+      "movieId": "mov-singham-again",
+      "screenId": "screen-2",
+      "date": "2026-10-29",
+      "startTime": "18:30",
+      "endTime": "21:30",
+      "pricing": {
+        "RECLINER": 340,
+        "PRIME": 240,
+        "CLASSIC": 180
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-29-s2-2200",
+      "movieId": "mov-devara",
+      "screenId": "screen-2",
+      "date": "2026-10-29",
+      "startTime": "22:00",
+      "endTime": "01:00",
+      "pricing": {
+        "RECLINER": 300,
+        "PRIME": 200,
+        "CLASSIC": 150
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-30-s1-1030",
+      "movieId": "mov-pushpa-2",
+      "screenId": "screen-1",
+      "date": "2026-10-30",
+      "startTime": "10:30",
+      "endTime": "14:00",
+      "pricing": {
+        "RECLINER": 350,
+        "PRIME": 240,
+        "CLASSIC": 180
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-30-s1-1445",
+      "movieId": "mov-stree-2",
+      "screenId": "screen-1",
+      "date": "2026-10-30",
+      "startTime": "14:45",
+      "endTime": "17:30",
+      "pricing": {
+        "RECLINER": 350,
+        "PRIME": 240,
+        "CLASSIC": 180
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-30-s1-1815",
+      "movieId": "mov-pushpa-2",
+      "screenId": "screen-1",
+      "date": "2026-10-30",
+      "startTime": "18:15",
+      "endTime": "21:45",
+      "pricing": {
+        "RECLINER": 380,
+        "PRIME": 260,
+        "CLASSIC": 200
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-30-s1-2215",
+      "movieId": "mov-stree-2",
+      "screenId": "screen-1",
+      "date": "2026-10-30",
+      "startTime": "22:15",
+      "endTime": "01:00",
+      "pricing": {
+        "RECLINER": 320,
+        "PRIME": 220,
+        "CLASSIC": 170
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-30-s2-1115",
+      "movieId": "mov-singham-again",
+      "screenId": "screen-2",
+      "date": "2026-10-30",
+      "startTime": "11:15",
+      "endTime": "14:15",
+      "pricing": {
+        "RECLINER": 320,
+        "PRIME": 220,
+        "CLASSIC": 160
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-30-s2-1500",
+      "movieId": "mov-ganga-teere",
+      "screenId": "screen-2",
+      "date": "2026-10-30",
+      "startTime": "15:00",
+      "endTime": "17:30",
+      "pricing": {
+        "RECLINER": 280,
+        "PRIME": 180,
+        "CLASSIC": 130
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-30-s2-1830",
+      "movieId": "mov-singham-again",
+      "screenId": "screen-2",
+      "date": "2026-10-30",
+      "startTime": "18:30",
+      "endTime": "21:30",
+      "pricing": {
+        "RECLINER": 340,
+        "PRIME": 240,
+        "CLASSIC": 180
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-30-s2-2200",
+      "movieId": "mov-devara",
+      "screenId": "screen-2",
+      "date": "2026-10-30",
+      "startTime": "22:00",
+      "endTime": "01:00",
+      "pricing": {
+        "RECLINER": 300,
+        "PRIME": 200,
+        "CLASSIC": 150
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-31-s1-1030",
+      "movieId": "mov-pushpa-2",
+      "screenId": "screen-1",
+      "date": "2026-10-31",
+      "startTime": "10:30",
+      "endTime": "14:00",
+      "pricing": {
+        "RECLINER": 350,
+        "PRIME": 240,
+        "CLASSIC": 180
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-31-s1-1445",
+      "movieId": "mov-stree-2",
+      "screenId": "screen-1",
+      "date": "2026-10-31",
+      "startTime": "14:45",
+      "endTime": "17:30",
+      "pricing": {
+        "RECLINER": 350,
+        "PRIME": 240,
+        "CLASSIC": 180
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-31-s1-1815",
+      "movieId": "mov-pushpa-2",
+      "screenId": "screen-1",
+      "date": "2026-10-31",
+      "startTime": "18:15",
+      "endTime": "21:45",
+      "pricing": {
+        "RECLINER": 380,
+        "PRIME": 260,
+        "CLASSIC": 200
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-31-s1-2215",
+      "movieId": "mov-stree-2",
+      "screenId": "screen-1",
+      "date": "2026-10-31",
+      "startTime": "22:15",
+      "endTime": "01:00",
+      "pricing": {
+        "RECLINER": 320,
+        "PRIME": 220,
+        "CLASSIC": 170
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-31-s2-1115",
+      "movieId": "mov-singham-again",
+      "screenId": "screen-2",
+      "date": "2026-10-31",
+      "startTime": "11:15",
+      "endTime": "14:15",
+      "pricing": {
+        "RECLINER": 320,
+        "PRIME": 220,
+        "CLASSIC": 160
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-31-s2-1500",
+      "movieId": "mov-ganga-teere",
+      "screenId": "screen-2",
+      "date": "2026-10-31",
+      "startTime": "15:00",
+      "endTime": "17:30",
+      "pricing": {
+        "RECLINER": 280,
+        "PRIME": 180,
+        "CLASSIC": 130
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-31-s2-1830",
+      "movieId": "mov-singham-again",
+      "screenId": "screen-2",
+      "date": "2026-10-31",
+      "startTime": "18:30",
+      "endTime": "21:30",
+      "pricing": {
+        "RECLINER": 340,
+        "PRIME": 240,
+        "CLASSIC": 180
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-10-31-s2-2200",
+      "movieId": "mov-devara",
+      "screenId": "screen-2",
+      "date": "2026-10-31",
+      "startTime": "22:00",
+      "endTime": "01:00",
+      "pricing": {
+        "RECLINER": 300,
+        "PRIME": 200,
+        "CLASSIC": 150
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-01-s1-1030",
+      "movieId": "mov-pushpa-2",
+      "screenId": "screen-1",
+      "date": "2026-11-01",
+      "startTime": "10:30",
+      "endTime": "14:00",
+      "pricing": {
+        "RECLINER": 350,
+        "PRIME": 240,
+        "CLASSIC": 180
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-01-s1-1445",
+      "movieId": "mov-stree-2",
+      "screenId": "screen-1",
+      "date": "2026-11-01",
+      "startTime": "14:45",
+      "endTime": "17:30",
+      "pricing": {
+        "RECLINER": 350,
+        "PRIME": 240,
+        "CLASSIC": 180
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-01-s1-1815",
+      "movieId": "mov-pushpa-2",
+      "screenId": "screen-1",
+      "date": "2026-11-01",
+      "startTime": "18:15",
+      "endTime": "21:45",
+      "pricing": {
+        "RECLINER": 380,
+        "PRIME": 260,
+        "CLASSIC": 200
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-01-s1-2215",
+      "movieId": "mov-stree-2",
+      "screenId": "screen-1",
+      "date": "2026-11-01",
+      "startTime": "22:15",
+      "endTime": "01:00",
+      "pricing": {
+        "RECLINER": 320,
+        "PRIME": 220,
+        "CLASSIC": 170
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-01-s2-1115",
+      "movieId": "mov-singham-again",
+      "screenId": "screen-2",
+      "date": "2026-11-01",
+      "startTime": "11:15",
+      "endTime": "14:15",
+      "pricing": {
+        "RECLINER": 320,
+        "PRIME": 220,
+        "CLASSIC": 160
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-01-s2-1500",
+      "movieId": "mov-ganga-teere",
+      "screenId": "screen-2",
+      "date": "2026-11-01",
+      "startTime": "15:00",
+      "endTime": "17:30",
+      "pricing": {
+        "RECLINER": 280,
+        "PRIME": 180,
+        "CLASSIC": 130
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-01-s2-1830",
+      "movieId": "mov-singham-again",
+      "screenId": "screen-2",
+      "date": "2026-11-01",
+      "startTime": "18:30",
+      "endTime": "21:30",
+      "pricing": {
+        "RECLINER": 340,
+        "PRIME": 240,
+        "CLASSIC": 180
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-01-s2-2200",
+      "movieId": "mov-devara",
+      "screenId": "screen-2",
+      "date": "2026-11-01",
+      "startTime": "22:00",
+      "endTime": "01:00",
+      "pricing": {
+        "RECLINER": 300,
+        "PRIME": 200,
+        "CLASSIC": 150
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-02-s1-1030",
+      "movieId": "mov-pushpa-2",
+      "screenId": "screen-1",
+      "date": "2026-11-02",
+      "startTime": "10:30",
+      "endTime": "14:00",
+      "pricing": {
+        "RECLINER": 350,
+        "PRIME": 240,
+        "CLASSIC": 180
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-02-s1-1445",
+      "movieId": "mov-stree-2",
+      "screenId": "screen-1",
+      "date": "2026-11-02",
+      "startTime": "14:45",
+      "endTime": "17:30",
+      "pricing": {
+        "RECLINER": 350,
+        "PRIME": 240,
+        "CLASSIC": 180
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-02-s1-1815",
+      "movieId": "mov-pushpa-2",
+      "screenId": "screen-1",
+      "date": "2026-11-02",
+      "startTime": "18:15",
+      "endTime": "21:45",
+      "pricing": {
+        "RECLINER": 380,
+        "PRIME": 260,
+        "CLASSIC": 200
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-02-s1-2215",
+      "movieId": "mov-stree-2",
+      "screenId": "screen-1",
+      "date": "2026-11-02",
+      "startTime": "22:15",
+      "endTime": "01:00",
+      "pricing": {
+        "RECLINER": 320,
+        "PRIME": 220,
+        "CLASSIC": 170
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-02-s2-1115",
+      "movieId": "mov-singham-again",
+      "screenId": "screen-2",
+      "date": "2026-11-02",
+      "startTime": "11:15",
+      "endTime": "14:15",
+      "pricing": {
+        "RECLINER": 320,
+        "PRIME": 220,
+        "CLASSIC": 160
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-02-s2-1500",
+      "movieId": "mov-ganga-teere",
+      "screenId": "screen-2",
+      "date": "2026-11-02",
+      "startTime": "15:00",
+      "endTime": "17:30",
+      "pricing": {
+        "RECLINER": 280,
+        "PRIME": 180,
+        "CLASSIC": 130
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-02-s2-1830",
+      "movieId": "mov-singham-again",
+      "screenId": "screen-2",
+      "date": "2026-11-02",
+      "startTime": "18:30",
+      "endTime": "21:30",
+      "pricing": {
+        "RECLINER": 340,
+        "PRIME": 240,
+        "CLASSIC": 180
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-02-s2-2200",
+      "movieId": "mov-devara",
+      "screenId": "screen-2",
+      "date": "2026-11-02",
+      "startTime": "22:00",
+      "endTime": "01:00",
+      "pricing": {
+        "RECLINER": 300,
+        "PRIME": 200,
+        "CLASSIC": 150
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-03-s1-1030",
+      "movieId": "mov-pushpa-2",
+      "screenId": "screen-1",
+      "date": "2026-11-03",
+      "startTime": "10:30",
+      "endTime": "14:00",
+      "pricing": {
+        "RECLINER": 350,
+        "PRIME": 240,
+        "CLASSIC": 180
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-03-s1-1445",
+      "movieId": "mov-stree-2",
+      "screenId": "screen-1",
+      "date": "2026-11-03",
+      "startTime": "14:45",
+      "endTime": "17:30",
+      "pricing": {
+        "RECLINER": 350,
+        "PRIME": 240,
+        "CLASSIC": 180
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-03-s1-1815",
+      "movieId": "mov-pushpa-2",
+      "screenId": "screen-1",
+      "date": "2026-11-03",
+      "startTime": "18:15",
+      "endTime": "21:45",
+      "pricing": {
+        "RECLINER": 380,
+        "PRIME": 260,
+        "CLASSIC": 200
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-03-s1-2215",
+      "movieId": "mov-stree-2",
+      "screenId": "screen-1",
+      "date": "2026-11-03",
+      "startTime": "22:15",
+      "endTime": "01:00",
+      "pricing": {
+        "RECLINER": 320,
+        "PRIME": 220,
+        "CLASSIC": 170
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-03-s2-1115",
+      "movieId": "mov-singham-again",
+      "screenId": "screen-2",
+      "date": "2026-11-03",
+      "startTime": "11:15",
+      "endTime": "14:15",
+      "pricing": {
+        "RECLINER": 320,
+        "PRIME": 220,
+        "CLASSIC": 160
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-03-s2-1500",
+      "movieId": "mov-ganga-teere",
+      "screenId": "screen-2",
+      "date": "2026-11-03",
+      "startTime": "15:00",
+      "endTime": "17:30",
+      "pricing": {
+        "RECLINER": 280,
+        "PRIME": 180,
+        "CLASSIC": 130
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-03-s2-1830",
+      "movieId": "mov-singham-again",
+      "screenId": "screen-2",
+      "date": "2026-11-03",
+      "startTime": "18:30",
+      "endTime": "21:30",
+      "pricing": {
+        "RECLINER": 340,
+        "PRIME": 240,
+        "CLASSIC": 180
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    },
+    {
+      "id": "show-2026-11-03-s2-2200",
+      "movieId": "mov-devara",
+      "screenId": "screen-2",
+      "date": "2026-11-03",
+      "startTime": "22:00",
+      "endTime": "01:00",
+      "pricing": {
+        "RECLINER": 300,
+        "PRIME": 200,
+        "CLASSIC": 150
+      },
+      "status": "OPEN",
+      "createdAt": "2026-10-28T07:30:17.744Z"
+    }
+  ],
+  "bookings": [
+    {
+      "customerName": "Customer B (Rohan)",
+      "customerEmail": "rohan@example.com",
+      "customerPhone": "9876543210",
+      "userId": "user-rohan-b",
+      "showId": "show-2026-10-28-s1-1030",
+      "movieId": "mov-pushpa-2",
+      "screenId": "screen-1",
+      "showDate": "2026-10-28",
+      "showTime": "10:30",
+      "movieTitle": "Test Movie",
+      "screenName": "Audi 1",
+      "seats": [
+        {
+          "seatLabel": "D-5",
+          "rowLabel": "D",
+          "seatNumber": 5,
+          "category": "PRIME",
+          "price": 180
+        }
+      ],
+      "concessions": [],
+      "subtotal": 180,
+      "convenienceFee": 25,
+      "gstAmount": 37,
+      "discountAmount": 0,
+      "totalAmount": 242,
+      "id": "LXM-26R-4979",
+      "ticketToken": "TOKEN_LXM-26R-4979_78JH0LJZ",
+      "bookingStatus": "CONFIRMED",
+      "paymentStatus": "SUCCESS",
+      "isAdmitted": false,
+      "createdAt": "2026-10-28T07:30:17.747Z",
+      "updatedAt": "2026-10-28T07:30:17.747Z"
+    }
+  ],
+  "seatHolds": [
+    {
+      "showId": "show-2026-10-28-s1-1030",
+      "seatId": "D-5",
+      "userId": "device-b-customer-session",
+      "expiresAt": 1793172917746
+    }
+  ],
+  "coupons": [
+    {
+      "id": "coup-1",
+      "code": "LAXMI100",
+      "discountType": "FLAT",
+      "discountValue": 100,
+      "minBookingAmount": 500,
+      "expiryDate": "2026-12-31",
+      "usageCount": 142,
+      "maxUsage": 1000,
+      "isActive": true,
+      "description": "Flat ₹100 off on bookings of ₹500 or more at Laxmi Cineplex."
+    },
+    {
+      "id": "coup-2",
+      "code": "WELCOME50",
+      "discountType": "FLAT",
+      "discountValue": 50,
+      "minBookingAmount": 250,
+      "expiryDate": "2026-12-31",
+      "usageCount": 389,
+      "maxUsage": 5000,
+      "isActive": true,
+      "description": "₹50 instant discount for new cinema patrons."
+    },
+    {
+      "id": "coup-3",
+      "code": "HAZARI20",
+      "discountType": "PERCENTAGE",
+      "discountValue": 20,
+      "maxDiscount": 150,
+      "minBookingAmount": 400,
+      "expiryDate": "2026-12-31",
+      "usageCount": 78,
+      "maxUsage": 500,
+      "isActive": true,
+      "description": "20% discount up to ₹150 for Hazaribagh movie lovers."
+    }
+  ],
+  "banners": [
+    {
+      "id": "ban-1",
+      "title": "Pushpa 2: The Rule",
+      "subtitle": "The ultimate fireworks on big screen. Now playing in Screen 1 Dolby Atmos 7.1 with luxury recliners!",
+      "movieId": "mov-pushpa-2",
+      "imageUrl": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=80",
+      "ctaText": "Book Tickets Now",
+      "ctaLink": "/movies/mov-pushpa-2",
+      "isActive": true,
+      "displayOrder": 1
+    },
+    {
+      "id": "ban-2",
+      "title": "Experience 4K Laser Projection",
+      "subtitle": "Ultra-crisp RGB laser brightness, 3D readiness, and thunderous acoustic sound engineering in Hazaribagh.",
+      "imageUrl": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=1600&q=80",
+      "ctaText": "Explore Cinema & Screens",
+      "ctaLink": "/cinema",
+      "isActive": true,
+      "displayOrder": 2
+    },
+    {
+      "id": "ban-3",
+      "title": "Stree 2: Sarkate Ka Aatank",
+      "subtitle": "Blockbuster horror comedy running housefull! Reserve your Royal Recliner seats in advance.",
+      "movieId": "mov-stree-2",
+      "imageUrl": "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=1600&q=80",
+      "ctaText": "Check Showtimes",
+      "ctaLink": "/movies/mov-stree-2",
+      "isActive": true,
+      "displayOrder": 3
+    },
+    {
+      "title": "Diwali Special 2026 at Laxmi Cineplex",
+      "subtitle": "Flat 20% off on all recliner seats with code DIWALI20",
+      "imageUrl": "https://images.unsplash.com/photo-1518173946687-a4c8a383392e?w=1600",
+      "ctaText": "Claim Discount",
+      "ctaLink": "/movies",
+      "isActive": true,
+      "displayOrder": 1,
+      "id": "bnr-mvrsof0y-stcj"
+    }
+  ],
+  "announcements": [
+    {
+      "id": "ann-1",
+      "message": "Welcome to Laxmi Cineplex Hazaribagh! Experience Jharkhand’s premier Dolby Atmos 7.1 and 4K Laser screens.",
+      "badge": "NEW",
+      "linkText": "View Facilities",
+      "linkUrl": "/cinema",
+      "isActive": true,
+      "createdAt": "2026-10-28T07:30:17.743Z"
+    },
+    {
+      "id": "ann-2",
+      "message": "Midweek Cinema Treat: Flat ₹100 discount on 3 or more tickets with code LAXMI100.",
+      "badge": "OFFER",
+      "linkText": "Book Now",
+      "linkUrl": "/movies",
+      "isActive": true,
+      "createdAt": "2026-10-28T07:30:17.743Z"
+    },
+    {
+      "id": "ann-3",
+      "message": "Online booking convenience: Show your digital QR e-ticket at the turnstile for instant contactless entry!",
+      "badge": "NOTICE",
+      "isActive": true,
+      "createdAt": "2026-10-28T07:30:17.743Z"
+    }
+  ],
+  "staff": [
+    {
+      "id": "stf-1",
+      "name": "Rajan Bhogta",
+      "email": "rajanbhogta@laxmicineplex.in",
+      "phone": "+91 9431 187654",
+      "role": "SUPER_ADMIN",
+      "department": "Management",
+      "permissions": [
+        "ALL_PERMISSIONS"
+      ],
+      "status": "ACTIVE",
+      "createdAt": "2024-01-15T10:00:00Z",
+      "lastLogin": "2026-10-28T07:30:17.743Z"
+    },
+    {
+      "id": "stf-2",
+      "name": "Amit Verma",
+      "email": "amit.verma@laxmicineplex.in",
+      "phone": "+91 9835 112233",
+      "role": "MANAGER",
+      "department": "Operations & Shows",
+      "permissions": [
+        "MANAGE_MOVIES",
+        "MANAGE_SHOWS",
+        "VERIFY_PAYMENTS",
+        "MANAGE_BANNERS"
+      ],
+      "status": "ACTIVE",
+      "createdAt": "2024-02-01T10:00:00Z",
+      "lastLogin": "2026-10-28T03:30:17.743Z"
+    },
+    {
+      "id": "stf-3",
+      "name": "Pooja Kumari",
+      "email": "pooja.boxoffice@laxmicineplex.in",
+      "phone": "+91 9470 334455",
+      "role": "BOX_OFFICE",
+      "department": "Ticket Counter & Payments",
+      "permissions": [
+        "VIEW_BOOKINGS",
+        "VERIFY_PAYMENTS",
+        "COUNTER_TICKETING"
+      ],
+      "status": "ACTIVE",
+      "createdAt": "2024-03-10T10:00:00Z",
+      "lastLogin": "2026-10-28T05:30:17.743Z"
+    },
+    {
+      "id": "stf-4",
+      "name": "Sunil Mahto",
+      "email": "sunil.usher@laxmicineplex.in",
+      "phone": "+91 9122 778899",
+      "role": "USHER",
+      "department": "Turnstile & Screen Access",
+      "permissions": [
+        "SCAN_TICKETS",
+        "VIEW_SCHEDULE"
+      ],
+      "status": "ACTIVE",
+      "createdAt": "2024-04-05T10:00:00Z",
+      "lastLogin": "2026-10-27T23:30:17.743Z"
+    }
+  ],
+  "pages": [
+    {
+      "id": "pg-about",
+      "title": "About Laxmi Cineplex Hazaribagh",
+      "slug": "about",
+      "content": "Laxmi Cineplex is the crown jewel of cinema entertainment in Hazaribagh, Jharkhand. Located conveniently near Jhanda Chowk, our multiplex brings world-class cinematic technology to local cinephiles with high-gain silver screens, Barco 4K Laser projection, and immersive Dolby Atmos 7.1 surround sound. We offer plush VIP recliners, hygienic cafeteria snacks, sanitized auditoriums, and warm Jharkhand hospitality.",
+      "metaTitle": "About Laxmi Cineplex Hazaribagh - Premier Cinema in Jharkhand",
+      "metaDescription": "Discover the premier moviegoing destination in Hazaribagh featuring 4K Laser projection and Dolby Atmos 7.1 sound.",
+      "updatedAt": "2026-10-28T07:30:17.743Z"
+    },
+    {
+      "id": "pg-terms",
+      "title": "Terms of Service & Booking Policies",
+      "slug": "terms",
+      "content": "1. Entry is permitted only upon presentation of a valid digital or printed QR e-ticket.\n2. In accordance with Indian censorship rules (CBFC), patrons under 18 years will not be admitted to films rated 'A' (Adults Only). No refunds will be provided for age non-compliance.\n3. Outside food and beverages, sharp items, and recording devices are strictly prohibited.\n4. Cancellations are permitted up to 2 hours before the scheduled showtime for a 75% refund to the original payment source.\n5. Seats booked via UPI QR are confirmed upon verified transaction UTR matching with Box Office records.",
+      "metaTitle": "Booking Terms & Conditions - Laxmi Cineplex Hazaribagh",
+      "metaDescription": "Read booking, cancellation, and admission policies for Laxmi Cineplex Hazaribagh.",
+      "updatedAt": "2026-10-28T07:30:17.743Z"
+    },
+    {
+      "id": "pg-privacy",
+      "title": "Privacy Policy",
+      "slug": "privacy",
+      "content": "Laxmi Cineplex respects your privacy. We collect customer mobile numbers and email addresses strictly for transmitting digital booking confirmations, turnstile entry QR tokens, and important cinema service alerts. We never sell or share patron information with third-party advertisers. All transaction and UTR verification data is handled through encrypted storage.",
+      "metaTitle": "Privacy Policy - Laxmi Cineplex Hazaribagh",
+      "metaDescription": "Learn how Laxmi Cineplex securely handles customer data and transaction records.",
+      "updatedAt": "2026-10-28T07:30:17.743Z"
+    },
+    {
+      "id": "pg-cancellation",
+      "title": "Cancellation & Refund Policy",
+      "slug": "cancellation",
+      "content": "We offer transparent cancellation on confirmed bookings:\n- Up to 2 hours before showtime: 75% refund of ticket value (convenience fees and taxes are non-refundable).\n- Within 2 hours of showtime: Non-cancellable.\n- If a show is cancelled due to technical difficulties or cinema authority instructions: 100% full refund including taxes is initiated within 24 hours.\n- UPI QR bookings rejected due to invalid UTR are marked as cancelled with automatic seat release.",
+      "metaTitle": "Cancellation & Refund Policy - Laxmi Cineplex",
+      "metaDescription": "Easy cancellation and refund guidelines for movie tickets at Laxmi Cineplex Hazaribagh.",
+      "updatedAt": "2026-10-28T07:30:17.743Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1",
+      "title": "UPI QR Payment Integration Active",
+      "message": "Direct UPI payments via India Post Payment Bank (rajanbhogta714@okhdfcbank) are live with Box Office UTR verification.",
+      "type": "SUCCESS",
+      "target": "ALL",
+      "createdAt": "2026-10-28T07:30:17.743Z",
+      "isRead": false
+    },
+    {
+      "id": "notif-2",
+      "title": "Advance Booking Open for Pushpa 2",
+      "message": "Screen 1 Dolby Atmos 7.1 shows are now open for online advance reservations.",
+      "type": "INFO",
+      "target": "CUSTOMERS",
+      "createdAt": "2026-10-28T07:30:17.743Z",
+      "isRead": false
+    },
+    {
+      "id": "notif-3",
+      "title": "System Security Check Completed",
+      "message": "Admin security protocols, emergency key recovery, and audit log tracking are active.",
+      "type": "INFO",
+      "target": "ADMINS",
+      "createdAt": "2026-10-28T07:30:17.743Z",
+      "isRead": true
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log-1793172617746-ei0yz",
+      "timestamp": "2026-10-28T07:30:17.746Z",
+      "actor": "rajanbhogta",
+      "action": "UPDATE_SETTINGS",
+      "targetType": "SETTINGS",
+      "details": "Updated cinema operational settings and fees"
+    },
+    {
+      "id": "log-1793172617746-7h346",
+      "timestamp": "2026-10-28T07:30:17.746Z",
+      "actor": "rajanbhogta",
+      "action": "CREATE_BANNER",
+      "targetType": "BANNER",
+      "targetId": "bnr-mvrsof0y-stcj",
+      "details": "Created hero banner \"Diwali Special 2026 at Laxmi Cineplex\""
+    },
+    {
+      "id": "log-1793172617746-rg583",
+      "timestamp": "2026-10-28T07:30:17.746Z",
+      "actor": "rajanbhogta (Admin Session 1)",
+      "action": "UPDATE_MOVIE",
+      "targetType": "MOVIE",
+      "targetId": "mov-mvrsof0x-uw2s",
+      "details": "Updated movie \"Hazaribagh Express 4K\" (COMING_SOON)"
+    },
+    {
+      "id": "log-1793172617746-gjrpn",
+      "timestamp": "2026-10-28T07:30:17.746Z",
+      "actor": "rajanbhogta (Admin Session 1)",
+      "action": "CREATE_MOVIE",
+      "targetType": "MOVIE",
+      "targetId": "mov-mvrsof0x-uw2s",
+      "details": "Created movie \"Hazaribagh Express 4K\" (NOW_SHOWING)"
+    },
+    {
+      "id": "log-init",
+      "timestamp": "2026-10-28T07:30:17.744Z",
+      "actor": "SYSTEM",
+      "action": "CENTRAL_DATABASE_INITIALIZATION",
+      "targetType": "SETTINGS",
+      "details": "Central authoritative database seeded and active for all devices."
+    }
+  ],
+  "version": 11,
+  "lastUpdated": "2026-10-28T07:30:17.747Z"
+}

@@ -1,0 +1,282 @@
+{
+  "entities": {
+    "Movie": {
+      "title": "Movie",
+      "description": "Cinema and OTT media content record with monetization, playback provider, genres, episodes, and publication visibility",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "title": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "synopsis": { "type": "string", "maxLength": 2000 },
+        "language": { "type": "string", "maxLength": 50 },
+        "durationMinutes": { "type": "number" },
+        "releaseDate": { "type": "string", "maxLength": 20 },
+        "certification": { "type": "string", "enum": ["U", "UA", "UA 13+", "UA 16+", "A"] },
+        "posterUrl": { "type": "string", "maxLength": 1000 },
+        "backdropUrl": { "type": "string", "maxLength": 1000 },
+        "trailerUrl": { "type": "string", "maxLength": 1000 },
+        "status": { "type": "string", "enum": ["NOW_SHOWING", "COMING_SOON", "DRAFT", "ARCHIVED"] },
+        "contentType": { "type": "string", "enum": ["CINEMA_MOVIE", "OTT_MOVIE", "WEB_SERIES", "SHORT_FILM", "DOCUMENTARY", "VIDEO_RENT", "VIDEO_BUY"] },
+        "monetization": { "type": "string", "enum": ["FREE", "RENT", "BUY", "RENT_OR_BUY", "SUBSCRIPTION_READY"] },
+        "visibility": { "type": "string", "enum": ["DRAFT", "PUBLISHED", "UNPUBLISHED"] },
+        "releaseYear": { "type": "number" },
+        "rentPriceINR": { "type": "number" },
+        "rentalDurationHours": { "type": "number" },
+        "buyPriceINR": { "type": "number" },
+        "currency": { "type": "string", "maxLength": 10 },
+        "videoProvider": { "type": "string", "enum": ["CLOUDFLARE_STREAM", "AWS_MEDIACONVERT", "BUNNY_STREAM", "MUX", "YOUTUBE_UNLISTED", "CUSTOM_HLS"] },
+        "playbackId": { "type": "string", "maxLength": 256 },
+        "director": { "type": "string", "maxLength": 100 },
+        "isFeatured": { "type": "boolean" },
+        "isTrending": { "type": "boolean" },
+        "isRegional": { "type": "boolean" },
+        "createdAt": { "type": "string", "maxLength": 50 },
+        "updatedAt": { "type": "string", "maxLength": 50 }
+      },
+      "required": ["id", "title", "language", "durationMinutes", "releaseDate", "certification", "posterUrl", "status"]
+    },
+    "RentalEntitlement": {
+      "title": "RentalEntitlement",
+      "description": "Customer rental license granting time-limited streaming access verified by trusted server",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "userEmail": { "type": "string", "maxLength": 100 },
+        "contentId": { "type": "string", "maxLength": 128 },
+        "contentTitle": { "type": "string", "maxLength": 200 },
+        "posterUrl": { "type": "string", "maxLength": 1000 },
+        "contentType": { "type": "string", "maxLength": 50 },
+        "orderId": { "type": "string", "maxLength": 128 },
+        "amountPaidINR": { "type": "number" },
+        "durationHours": { "type": "number" },
+        "purchasedAt": { "type": "string", "maxLength": 50 },
+        "expiresAt": { "type": "string", "maxLength": 50 },
+        "status": { "type": "string", "enum": ["ACTIVE", "EXPIRED", "REVOKED"] }
+      },
+      "required": ["id", "userId", "contentId", "contentTitle", "durationHours", "purchasedAt", "expiresAt", "status"]
+    },
+    "PurchaseEntitlement": {
+      "title": "PurchaseEntitlement",
+      "description": "Customer permanent digital ownership record verified by trusted server",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "userEmail": { "type": "string", "maxLength": 100 },
+        "contentId": { "type": "string", "maxLength": 128 },
+        "contentTitle": { "type": "string", "maxLength": 200 },
+        "posterUrl": { "type": "string", "maxLength": 1000 },
+        "contentType": { "type": "string", "maxLength": 50 },
+        "orderId": { "type": "string", "maxLength": 128 },
+        "amountPaidINR": { "type": "number" },
+        "purchasedAt": { "type": "string", "maxLength": 50 },
+        "status": { "type": "string", "enum": ["ACTIVE", "REVOKED"] }
+      },
+      "required": ["id", "userId", "contentId", "contentTitle", "purchasedAt", "status"]
+    },
+    "VideoOrder": {
+      "title": "VideoOrder",
+      "description": "Financial transaction order for video rental or purchase",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "userEmail": { "type": "string", "maxLength": 100 },
+        "customerName": { "type": "string", "maxLength": 100 },
+        "customerPhone": { "type": "string", "maxLength": 20 },
+        "contentId": { "type": "string", "maxLength": 128 },
+        "contentTitle": { "type": "string", "maxLength": 200 },
+        "orderType": { "type": "string", "enum": ["RENTAL", "PURCHASE"] },
+        "amount": { "type": "number" },
+        "currency": { "type": "string", "maxLength": 10 },
+        "paymentMethod": { "type": "string", "enum": ["UPI", "GATEWAY_RAZORPAY", "GATEWAY_STRIPE"] },
+        "paymentStatus": { "type": "string", "enum": ["PENDING", "PENDING_VERIFICATION", "PAID", "FAILED", "REFUNDED"] },
+        "upiReference": { "type": "string", "maxLength": 100 },
+        "createdAt": { "type": "string", "maxLength": 50 }
+      },
+      "required": ["id", "userId", "contentId", "orderType", "amount", "paymentStatus"]
+    },
+    "HeroBanner": {
+      "title": "HeroBanner",
+      "description": "Hero carousel promotional banner for homepage display",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "title": { "type": "string", "maxLength": 150 },
+        "subtitle": { "type": "string", "maxLength": 200 },
+        "description": { "type": "string", "maxLength": 500 },
+        "imageUrl": { "type": "string", "maxLength": 1000 },
+        "desktopImage": { "type": "string", "maxLength": 1000 },
+        "mobileImage": { "type": "string", "maxLength": 1000 },
+        "ctaText": { "type": "string", "maxLength": 50 },
+        "ctaLink": { "type": "string", "maxLength": 200 },
+        "isActive": { "type": "boolean" },
+        "displayOrder": { "type": "number" },
+        "movieId": { "type": "string", "maxLength": 128 }
+      },
+      "required": ["id", "title", "imageUrl", "ctaText", "ctaLink", "isActive", "displayOrder"]
+    },
+    "Show": {
+      "title": "Show",
+      "description": "Scheduled movie screening with date, time, screen and pricing tiers",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "movieId": { "type": "string", "maxLength": 128 },
+        "screenId": { "type": "string", "maxLength": 128 },
+        "date": { "type": "string", "maxLength": 20 },
+        "startTime": { "type": "string", "maxLength": 10 },
+        "endTime": { "type": "string", "maxLength": 10 },
+        "status": { "type": "string", "enum": ["SCHEDULED", "OPEN", "CANCELLED", "COMPLETED"] },
+        "createdAt": { "type": "string", "maxLength": 50 }
+      },
+      "required": ["id", "movieId", "screenId", "date", "startTime", "endTime", "status"]
+    },
+    "Screen": {
+      "title": "Screen",
+      "description": "Cinema auditorium screen configuration and technical sound/projection specifications",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 100 },
+        "soundSystem": { "type": "string", "maxLength": 100 },
+        "projection": { "type": "string", "maxLength": 100 },
+        "totalSeats": { "type": "number" },
+        "isActive": { "type": "boolean" }
+      },
+      "required": ["id", "name", "soundSystem", "projection", "totalSeats", "isActive"]
+    },
+    "Booking": {
+      "title": "Booking",
+      "description": "Ticket booking order with customer details, show information, selected seats, payment details and admission state",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "ticketToken": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "customerName": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "customerEmail": { "type": "string", "maxLength": 100 },
+        "customerPhone": { "type": "string", "maxLength": 20 },
+        "showId": { "type": "string", "maxLength": 128 },
+        "movieId": { "type": "string", "maxLength": 128 },
+        "screenId": { "type": "string", "maxLength": 128 },
+        "showDate": { "type": "string", "maxLength": 20 },
+        "showTime": { "type": "string", "maxLength": 10 },
+        "movieTitle": { "type": "string", "maxLength": 200 },
+        "screenName": { "type": "string", "maxLength": 100 },
+        "subtotal": { "type": "number" },
+        "convenienceFee": { "type": "number" },
+        "gstAmount": { "type": "number" },
+        "discountAmount": { "type": "number" },
+        "totalAmount": { "type": "number" },
+        "bookingStatus": { "type": "string", "enum": ["AWAITING_PAYMENT", "PENDING_VERIFICATION", "PAYMENT_VERIFIED", "CONFIRMED", "REJECTED", "EXPIRED", "CANCELLATION_REQUESTED", "CANCELLED", "REFUND_PENDING", "REFUNDED"] },
+        "paymentStatus": { "type": "string", "enum": ["UNPAID", "PENDING", "PENDING_VERIFICATION", "VERIFIED", "SUCCESS", "FAILED", "REFUNDED", "SUBMITTED"] },
+        "paymentMethod": { "type": "string", "enum": ["UPI", "CARD", "NETBANKING", "CASH_AT_COUNTER"] },
+        "upiReference": { "type": "string", "maxLength": 100 },
+        "bookedAt": { "type": "string", "maxLength": 50 }
+      },
+      "required": ["id", "ticketToken", "customerName", "showId", "movieId", "screenId", "totalAmount", "bookingStatus", "paymentStatus"]
+    },
+    "CinemaSettings": {
+      "title": "CinemaSettings",
+      "description": "Master cinema operational configuration, contact details, convenience fee and UPI credentials",
+      "type": "object",
+      "properties": {
+        "cinemaName": { "type": "string", "maxLength": 100 },
+        "location": { "type": "string", "maxLength": 100 },
+        "address": { "type": "string", "maxLength": 200 },
+        "phone": { "type": "string", "maxLength": 100 },
+        "email": { "type": "string", "maxLength": 100 },
+        "timezone": { "type": "string", "maxLength": 50 },
+        "currency": { "type": "string", "maxLength": 10 },
+        "convenienceFeePerTicket": { "type": "number" },
+        "gstPercentage": { "type": "number" },
+        "seatHoldMinutes": { "type": "number" },
+        "isMaintenanceMode": { "type": "boolean" },
+        "announcementTickerActive": { "type": "boolean" }
+      },
+      "required": ["cinemaName", "location", "address", "phone", "email", "currency"]
+    },
+    "Announcement": {
+      "title": "Announcement",
+      "description": "Scrolling announcement alert or offer ticker message",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "message": { "type": "string", "minLength": 1, "maxLength": 500 },
+        "badge": { "type": "string", "maxLength": 50 },
+        "linkText": { "type": "string", "maxLength": 50 },
+        "linkUrl": { "type": "string", "maxLength": 200 },
+        "isActive": { "type": "boolean" },
+        "createdAt": { "type": "string", "maxLength": 50 }
+      },
+      "required": ["id", "message", "isActive", "createdAt"]
+    },
+    "Coupon": {
+      "title": "Coupon",
+      "description": "Discount coupon code and discount criteria",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "code": { "type": "string", "minLength": 2, "maxLength": 30 },
+        "discountType": { "type": "string", "enum": ["PERCENTAGE", "FLAT"] },
+        "discountValue": { "type": "number" },
+        "minBookingAmount": { "type": "number" },
+        "maxDiscount": { "type": "number" },
+        "expiryDate": { "type": "string", "maxLength": 20 },
+        "usageCount": { "type": "number" },
+        "maxUsage": { "type": "number" },
+        "isActive": { "type": "boolean" },
+        "description": { "type": "string", "maxLength": 300 }
+      },
+      "required": ["id", "code", "discountType", "discountValue", "minBookingAmount", "expiryDate", "isActive"]
+    }
+  },
+  "firestore": {
+    "/movies/{movieId}": {
+      "schema": { "$ref": "#/entities/Movie" },
+      "description": "Published cinema and OTT media records; public read, admin write"
+    },
+    "/rentals/{rentalId}": {
+      "schema": { "$ref": "#/entities/RentalEntitlement" },
+      "description": "Customer rental licenses; private customer read, admin write"
+    },
+    "/purchases/{purchaseId}": {
+      "schema": { "$ref": "#/entities/PurchaseEntitlement" },
+      "description": "Customer permanent video purchases; private customer read, admin write"
+    },
+    "/video_orders/{orderId}": {
+      "schema": { "$ref": "#/entities/VideoOrder" },
+      "description": "Video rental and purchase orders; private customer read, customer create, admin verify"
+    },
+    "/banners/{bannerId}": {
+      "schema": { "$ref": "#/entities/HeroBanner" },
+      "description": "Promotional hero banners synchronized across all visitor homepages"
+    },
+    "/shows/{showId}": {
+      "schema": { "$ref": "#/entities/Show" },
+      "description": "Movie show schedules and screen times for booking"
+    },
+    "/screens/{screenId}": {
+      "schema": { "$ref": "#/entities/Screen" },
+      "description": "Auditorium seating blueprints, sound and projection specifications"
+    },
+    "/bookings/{bookingId}": {
+      "schema": { "$ref": "#/entities/Booking" },
+      "description": "Ticket booking records with private customer access and admin verification"
+    },
+    "/settings/{settingId}": {
+      "schema": { "$ref": "#/entities/CinemaSettings" },
+      "description": "Global cinema settings, fees, tax, and UPI payment details"
+    },
+    "/announcements/{announcementId}": {
+      "schema": { "$ref": "#/entities/Announcement" },
+      "description": "Real-time ticker banner announcements displayed at the top of the website"
+    },
+    "/coupons/{couponId}": {
+      "schema": { "$ref": "#/entities/Coupon" },
+      "description": "Discount coupon codes for booking discounts"
+    }
+  }
+}
